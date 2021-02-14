@@ -1,0 +1,40 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+p {
+    margin:0;
+}
+#app {
+    font-family: "Menlo";
+    background: #4e4e4e;
+    color: rgb(226, 226, 226);
+}
+
+#sidebar {
+    position: fixed;
+    width: 250px;
+    background: #313131;
+    z-index: 100;
+    height: 100vh;
+}
+
+#site {
+    position: absolute;
+    left: 250px;
+    width: calc(100vw - 250px);
+    background: inherit;
+    height: 100vh;
+}
+
+.document-block {
+    background: #5c5c5c;
+    margin: .5rem 1rem;
+    padding: 1.3rem 1rem;
+}
+
+.columns-item p{
+    margin-bottom:0;
+    text-align: center;
+}
