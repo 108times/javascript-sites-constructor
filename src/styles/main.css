@@ -7,7 +7,7 @@ p {
     margin:0;
 }
 #app {
-    font-family: "Menlo";
+    font-family: "Montserrat";
     background: #4e4e4e;
     color: rgb(226, 226, 226);
 }
@@ -30,7 +30,7 @@ p {
 
 .document-block {
     background: #5c5c5c;
-    margin: .5rem 1rem;
+    margin: 1rem;
     padding: 1.3rem 1rem;
 }
 
