@@ -1,6 +1,6 @@
-export function row(obj) {
+export function row(obj, styles = '') {
     return `
-        <div class="row">
+        <div class="row" style="${styles}">
             ${obj}
         </div>
     `
@@ -15,9 +15,11 @@ export function col(obj, styles = '') {
 }
 
 export function css(obj) {
-    const styles = obj.options.styles;
-    const keys = Object.keys(styles)
-    const result = keys.map( style => `${style}: ${styles[style]}`).join(';')
-    return result
-    //keys.map( key => )
+    const styles = obj?.options?.styles ?? ""
+    return objectToStyleString(styles);
+}
+
+export function objectToStyleString(obj) {
+    const toString = style => `${style}: ${obj[style]}`
+    return Object.keys(obj).map(toString).join(";")
 }
