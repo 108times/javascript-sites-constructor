@@ -18,17 +18,17 @@ export const model = [
                 img,
                 {
                     alt: "Picture`s name",
-                    styles: {
+                    imgStyles: {
                         width: "400px",
                         height: "auto",
                         margin: "0 auto"
                     },
-                    embedded: true,
-                    parentStyle: {
+                    styles: {
                         display: "flex",
                         "justify-content":"center",
                         "align-items" : "center"
-                    }
+                    },
+                    embedded: true,
                 }
             ),
             textBlock(
@@ -75,6 +75,12 @@ export const model = [
         }
     ),
     textBlock(
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor eligendi error quisquam recusandae repellat repudiandae rerum saepe velit. Aspernatur eum maxime neque. Accusamus ad architecto beatae blanditiis consequatur, deserunt dolor dolore dolorum, eligendi illum maiores modi molestiae molestias odio quod repudiandae, vero? Debitis facere natus quaerat repellendus sit."
+        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor eligendi error quisquam recusandae repellat repudiandae rerum saepe velit. Aspernatur eum maxime neque. Accusamus ad architecto beatae blanditiis consequatur, deserunt dolor dolore dolorum, eligendi illum maiores modi molestiae molestias odio quod repudiandae, vero? Debitis facere natus quaerat repellendus sit.",
+        {
+            styles:{
+                margin:"1rem auto",
+                padding: "2.5rem"
+            }
+        }
     )
 ]

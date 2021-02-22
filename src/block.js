@@ -50,8 +50,8 @@ function imageBlock(value, options = {}) {
         toHTML () {
             const container = options.embedded === true ? e => e : row;
             const alt = this.options.alt
-            const parentStyle = this.options?.parentStyle ? objectToStyleString(this.options.parentStyle) : "";
-            return container(col(`<img src="${this.value}" style="${css(this)}" alt="${alt}" >`, parentStyle) )
+            const imgStyles = this.options?.imgStyles ? objectToStyleString(this.options.imgStyles) : "";
+            return container(col(`<img src="${this.value}" style="${imgStyles}" alt="${alt}" >`, css(this)) )
         }
     }
 }
